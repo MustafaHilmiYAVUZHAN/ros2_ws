@@ -1,0 +1,45 @@
+[0.988s] Invoking command in '/home/yavuzhan/ros2_ws/src/biomed': PYTHONPATH=/home/yavuzhan/ros2_ws/build/biomed/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/biomed build --build-base /home/yavuzhan/ros2_ws/build/biomed/build install --record /home/yavuzhan/ros2_ws/build/biomed/install.log --single-version-externally-managed install_data
+[1.322s] running egg_info
+[1.322s] creating ../../build/biomed/biomed.egg-info
+[1.336s] writing ../../build/biomed/biomed.egg-info/PKG-INFO
+[1.336s] writing dependency_links to ../../build/biomed/biomed.egg-info/dependency_links.txt
+[1.336s] writing entry points to ../../build/biomed/biomed.egg-info/entry_points.txt
+[1.336s] writing requirements to ../../build/biomed/biomed.egg-info/requires.txt
+[1.336s] writing top-level names to ../../build/biomed/biomed.egg-info/top_level.txt
+[1.340s] writing manifest file '../../build/biomed/biomed.egg-info/SOURCES.txt'
+[1.366s] reading manifest file '../../build/biomed/biomed.egg-info/SOURCES.txt'
+[1.367s] writing manifest file '../../build/biomed/biomed.egg-info/SOURCES.txt'
+[1.367s] running build
+[1.367s] running build_py
+[1.367s] creating /home/yavuzhan/ros2_ws/build/biomed/build
+[1.367s] creating /home/yavuzhan/ros2_ws/build/biomed/build/lib
+[1.368s] creating /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed
+[1.368s] copying biomed/publisher.py -> /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed
+[1.368s] copying biomed/__init__.py -> /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed
+[1.368s] copying biomed/subscriber.py -> /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed
+[1.369s] running install
+[1.373s] running install_lib
+[1.384s] creating /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed
+[1.385s] copying /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed/publisher.py -> /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed
+[1.385s] copying /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed/__init__.py -> /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed
+[1.385s] copying /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed/subscriber.py -> /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed
+[1.385s] byte-compiling /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed/publisher.py to publisher.cpython-38.pyc
+[1.386s] byte-compiling /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed/__init__.py to __init__.cpython-38.pyc
+[1.386s] byte-compiling /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed/subscriber.py to subscriber.cpython-38.pyc
+[1.386s] running install_data
+[1.386s] creating /home/yavuzhan/ros2_ws/install/biomed/share/ament_index
+[1.386s] creating /home/yavuzhan/ros2_ws/install/biomed/share/ament_index/resource_index
+[1.387s] creating /home/yavuzhan/ros2_ws/install/biomed/share/ament_index/resource_index/packages
+[1.387s] copying resource/biomed -> /home/yavuzhan/ros2_ws/install/biomed/share/ament_index/resource_index/packages
+[1.387s] copying package.xml -> /home/yavuzhan/ros2_ws/install/biomed/share/biomed
+[1.387s] creating /home/yavuzhan/ros2_ws/install/biomed/share/biomed/launch
+[1.387s] copying launch/biomed_launch.py -> /home/yavuzhan/ros2_ws/install/biomed/share/biomed/launch
+[1.387s] creating /home/yavuzhan/ros2_ws/install/biomed/share/biomed/urdf
+[1.387s] copying urdf/biomed.urdf -> /home/yavuzhan/ros2_ws/install/biomed/share/biomed/urdf
+[1.387s] copying urdf/biomed_model.dae -> /home/yavuzhan/ros2_ws/install/biomed/share/biomed/urdf
+[1.388s] running install_egg_info
+[1.400s] Copying ../../build/biomed/biomed.egg-info to /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed-0.0.0-py3.8.egg-info
+[1.401s] running install_scripts
+[1.456s] Installing mainCode script to /home/yavuzhan/ros2_ws/install/biomed/lib/biomed
+[1.456s] writing list of installed files to '/home/yavuzhan/ros2_ws/build/biomed/install.log'
+[1.493s] Invoked command in '/home/yavuzhan/ros2_ws/src/biomed' returned '0': PYTHONPATH=/home/yavuzhan/ros2_ws/build/biomed/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/biomed build --build-base /home/yavuzhan/ros2_ws/build/biomed/build install --record /home/yavuzhan/ros2_ws/build/biomed/install.log --single-version-externally-managed install_data

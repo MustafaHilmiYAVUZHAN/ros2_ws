@@ -1,0 +1,43 @@
+running egg_info
+creating ../../build/biomed/biomed.egg-info
+writing ../../build/biomed/biomed.egg-info/PKG-INFO
+writing dependency_links to ../../build/biomed/biomed.egg-info/dependency_links.txt
+writing entry points to ../../build/biomed/biomed.egg-info/entry_points.txt
+writing requirements to ../../build/biomed/biomed.egg-info/requires.txt
+writing top-level names to ../../build/biomed/biomed.egg-info/top_level.txt
+writing manifest file '../../build/biomed/biomed.egg-info/SOURCES.txt'
+reading manifest file '../../build/biomed/biomed.egg-info/SOURCES.txt'
+writing manifest file '../../build/biomed/biomed.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yavuzhan/ros2_ws/build/biomed/build
+creating /home/yavuzhan/ros2_ws/build/biomed/build/lib
+creating /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed
+copying biomed/publisher.py -> /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed
+copying biomed/__init__.py -> /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed
+copying biomed/subscriber.py -> /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed
+running install
+running install_lib
+creating /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed
+copying /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed/publisher.py -> /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed
+copying /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed/__init__.py -> /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed
+copying /home/yavuzhan/ros2_ws/build/biomed/build/lib/biomed/subscriber.py -> /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed
+byte-compiling /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed/publisher.py to publisher.cpython-38.pyc
+byte-compiling /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed/subscriber.py to subscriber.cpython-38.pyc
+running install_data
+creating /home/yavuzhan/ros2_ws/install/biomed/share/ament_index
+creating /home/yavuzhan/ros2_ws/install/biomed/share/ament_index/resource_index
+creating /home/yavuzhan/ros2_ws/install/biomed/share/ament_index/resource_index/packages
+copying resource/biomed -> /home/yavuzhan/ros2_ws/install/biomed/share/ament_index/resource_index/packages
+copying package.xml -> /home/yavuzhan/ros2_ws/install/biomed/share/biomed
+creating /home/yavuzhan/ros2_ws/install/biomed/share/biomed/launch
+copying launch/biomed_launch.py -> /home/yavuzhan/ros2_ws/install/biomed/share/biomed/launch
+creating /home/yavuzhan/ros2_ws/install/biomed/share/biomed/urdf
+copying urdf/biomed.urdf -> /home/yavuzhan/ros2_ws/install/biomed/share/biomed/urdf
+copying urdf/biomed_model.dae -> /home/yavuzhan/ros2_ws/install/biomed/share/biomed/urdf
+running install_egg_info
+Copying ../../build/biomed/biomed.egg-info to /home/yavuzhan/ros2_ws/install/biomed/lib/python3.8/site-packages/biomed-0.0.0-py3.8.egg-info
+running install_scripts
+Installing mainCode script to /home/yavuzhan/ros2_ws/install/biomed/lib/biomed
+writing list of installed files to '/home/yavuzhan/ros2_ws/build/biomed/install.log'

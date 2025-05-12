@@ -1,0 +1,6 @@
+source;share/biomed/hook/pythonpath.ps1
+source;share/biomed/hook/pythonpath.dsv
+source;share/biomed/hook/pythonpath.sh
+source;share/biomed/hook/ament_prefix_path.ps1
+source;share/biomed/hook/ament_prefix_path.dsv
+source;share/biomed/hook/ament_prefix_path.sh

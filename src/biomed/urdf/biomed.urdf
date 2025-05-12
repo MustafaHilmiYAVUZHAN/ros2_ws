@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<robot name="biomed_hand" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Hand base -->
+  <link name="hand">
+    <visual>
+      <geometry>
+        <mesh filename="package://biomed/urdf/biomed_model.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+  </link>
+
+  <!-- Başparmak: a1 -> a2 -->
+  <link name="a1">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_a1" type="revolute">
+    <parent link="hand"/>
+    <child link="a1"/>
+    <origin xyz="0.03 0.02 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+  <link name="a2">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_a2" type="revolute">
+    <parent link="a1"/>
+    <child link="a2"/>
+    <origin xyz="0.02 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+  <!-- İşaret Parmak: b1 -> b2 -> b3 -->
+  <link name="b1">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_b1" type="revolute">
+    <parent link="hand"/>
+    <child link="b1"/>
+    <origin xyz="0.02 0.06 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+  <link name="b2">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_b2" type="revolute">
+    <parent link="b1"/>
+    <child link="b2"/>
+    <origin xyz="0.015 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+  <link name="b3">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_b3" type="revolute">
+    <parent link="b2"/>
+    <child link="b3"/>
+    <origin xyz="0.015 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+  <!-- Orta Parmak: c1 -> c2 -> c3 -->
+  <link name="c1">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_c1" type="revolute">
+    <parent link="hand"/>
+    <child link="c1"/>
+    <origin xyz="0.0 0.09 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+  <link name="c2">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_c2" type="revolute">
+    <parent link="c1"/>
+    <child link="c2"/>
+    <origin xyz="0.02 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+  <link name="c3">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_c3" type="revolute">
+    <parent link="c2"/>
+    <child link="c3"/>
+    <origin xyz="0.015 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+  <!-- Yüzük Parmak: d1 -> d2 -> d3 -->
+  <link name="d1">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_d1" type="revolute">
+    <parent link="hand"/>
+    <child link="d1"/>
+    <origin xyz="-0.015 0.07 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+  <link name="d2">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_d2" type="revolute">
+    <parent link="d1"/>
+    <child link="d2"/>
+    <origin xyz="0.015 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+  <link name="d3">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_d3" type="revolute">
+    <parent link="d2"/>
+    <child link="d3"/>
+    <origin xyz="0.015 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+  <!-- Serçe Parmak: e1 -> e2 -> e3 -->
+  <link name="e1">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_e1" type="revolute">
+    <parent link="hand"/>
+    <child link="e1"/>
+    <origin xyz="-0.03 0.05 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+  <link name="e2">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_e2" type="revolute">
+    <parent link="e1"/>
+    <child link="e2"/>
+    <origin xyz="0.015 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+  <link name="e3">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.03"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+  <joint name="joint_e3" type="revolute">
+    <parent link="e2"/>
+    <child link="e3"/>
+    <origin xyz="0.015 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="1.0" velocity="1.0"/>
+  </joint>
+
+</robot>
